@@ -391,15 +391,15 @@ namespace ManageSheetSpecs
             using (Transaction tx = new Transaction(doc))
             {
                 tx.Start("Organize Sheet");
-                mySheet.get_Parameter("*Discipline").Set("GENERAL");
-                mySheet.get_Parameter("*Discipline Code").Set("00");
+                mySheet.LookupParameter("*Discipline").Set("GENERAL");
+                mySheet.LookupParameter("*Discipline Code").Set("00");
                 if (templateCategory == "ARCHITECTURE")
                 {
-                    mySheet.get_Parameter("*Discipline Subcode").Set("A080 SPECIFICATIONS");
+                    mySheet.LookupParameter("*Discipline Subcode").Set("A080 SPECIFICATIONS");
                 }
                 else
                 {
-                    mySheet.get_Parameter("*Discipline Subcode").Set("IA080 SPECIFICATIONS");
+                    mySheet.LookupParameter("*Discipline Subcode").Set("IA080 SPECIFICATIONS");
                 }
                 tx.Commit();
             }
