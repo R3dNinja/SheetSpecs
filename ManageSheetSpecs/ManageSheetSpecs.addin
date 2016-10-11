@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command RevitAddin1</Text>
+    <Description>Export and Update Sheet Specs</Description>
+    <Assembly>ManageSheetSpecs.dll</Assembly>
+    <FullClassName>ManageSheetSpecs.Command</FullClassName>
+    <ClientId>84a9f3f9-6ff0-4b0a-bf60-d95b37eb0885</ClientId>
+    <VendorId>Kirksey</VendorId>
+    <VendorDescription>Kirksey Architecture, http://kirksey.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application ManageSheetSpecs</Name>
+    <Assembly>ManageSheetSpecs.dll</Assembly>
+    <FullClassName>ManageSheetSpecs.App</FullClassName>
+    <ClientId>b86a074e-241c-4f6d-b133-d19a3accd7a0</ClientId>
+    <VendorId>Kirksey</VendorId>
+    <VendorDescription>Kirksey Architecture, http://kirksey.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
